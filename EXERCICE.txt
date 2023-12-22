@@ -1,0 +1,7 @@
+- Faire les controllers login et register
+    - les deux doivent avoir une methode index()
+    - la methode index de login doit appeler le template Front/login
+    - la methode index de register doit appeler le template Front/register
+
+    - Sur register faire le formulaire d'inscription
+        - 

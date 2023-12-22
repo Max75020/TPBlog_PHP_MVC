@@ -1,0 +1,43 @@
+BDD : projet_blog
+
+TABLES : 
+
+    - membre 
+        - id_membre INT(3) PK AI
+        - username VARCHAR 255 UNIQUE
+        - password VARCHAR 255
+        - email VARCHAR 255 UNIQUE
+        - userpicture VARCHAR 255 
+        - status VARCHAR 255
+
+    - post
+        - id_post PK AI 
+        - title VARCHAR 
+        - content TEXT 
+        - date_created DATETIME 
+        - date_updated DATETIME
+        - main_image VARCHAR  
+        - membre_id INT(3) FK
+
+    - comment
+        - id_comment INT(3) PK AI
+        - membre_id INT(3) FK
+        - post_id INT(3) FK
+        - content TEXT 
+        - date_created DATETIME
+
+    - keyword
+        - id_keyword INT(3) PK AI
+        - keyword VARCHAR 255 UNIQUE
+
+    - post_keyword
+        - keyword_id INT(3) FK
+        - post_id INT(3) FK
+
+    - category 
+        - id_category INT(3) PK AI
+        - category VARCHAR 255 UNIQUE
+
+    - post_category
+        - category_id INT(3) FK
+        - post_id INT(3) FK

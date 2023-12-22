@@ -1,0 +1,43 @@
+Arborescence : 
+--------------
+- App/
+    - Controllers/
+        - Back/
+        - Front/
+            - IndexController.php
+            - LoginController.php
+            - RegisterController.php
+    - Models/
+        - Blog.php 
+        - User.php
+    - Views/
+        - Back/
+        - Front/
+            - index.php
+            - login.php
+            - register.php
+        - Layout/
+            - back.php
+            - main.php
+- Config/
+    - config.php 
+- Core/
+    - Autoloader.php 
+    - Controller.php 
+    - Model.php 
+    - Request.php 
+    - Router.php 
+    - Session.php 
+- Public/
+    - css/
+        - back.css
+        - main.css
+    - js/
+        - back.js
+        - main.js
+    - img/
+        - post/
+        - avatar/
+    - index.php
+- Vendor/
+- .htaccess
